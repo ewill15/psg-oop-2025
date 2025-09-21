@@ -1,0 +1,69 @@
+Un panadero quiere hacer galletas en forma de corazón.
+Las galletas pueden ser de arándano, menta, piña, uva y naranja.
+Deben tener glaseado azul, verde, amarillo, morado y naranja.
+
+# Analisis
+
+Requisitos:
+- hacer galletas de diferentes sabores
+- galletas en forma de corazón
+- galletas de arándano, menta, piña, uva y naranja
+- glaseado de color azul, verde, amarillo, morado y naranja
+
+Objetos:
+- Galleta
+
+Características:
+- Galleta:
+    - sabor
+    - glaseado
+
+Acciones:
+- (No hay acciones)
+Diseño de la clase
+
+# Diseño:
+
+Clases:
+- Galleta 💟:
+    - Nombre: GalletaCorazon
+    - Atributos:
+        - sabor
+        - glaseado
+    - Métodos:
+        - (No hay métodos)
+Tenemos como resultado una clase llamada GalletaCorazon
+
+que nos permite crear objetos GalletaCorazon
+
+de diferentes sabores y glaseados.
+
+Galleta
+
+# Diseño:
+
+Clases:
+- Galleta 💟:
+    - Nombre: GalletaCorazon
+    - Atributos:
+        - sabor
+        - glaseado
+    - Métodos:
+        - (No hay métodos)
+Tenemos como resultado una clase llamada GalletaCorazon
+
+que nos permite crear objetos GalletaCorazon
+
+de diferentes sabores y glaseados.
+
+Galleta
+
+💟 ➡ 💙💚💛💜🧡
+Clase: GalletaCorazon 💟
+Objetos:
+💙 Arándano azul
+💚 Menta verde
+💛 Piña amarilla
+💜 Uva morada
+🧡 Naranja anaranjado
+

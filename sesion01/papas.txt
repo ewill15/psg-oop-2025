@@ -1,0 +1,19 @@
+¿Qué características de una papa 🥔 son importantes?
+
+- Para un ingeniero mecánico que diseña máquinas peladoras de papas
+- Para un distribuidor de papas fritas
+
+
+Ejemplo
+- Para un ingeniero mecánico que diseña máquinas peladoras de papas
+    - Tamaño promedio (tamaño)
+    - Dureza de la cáscara (dureza)
+    - Resistencia a la presión (resistencia)
+    - Forma e irregularidades (uniformidad)
+    - Textura de la piel (textura)
+- Para un distribuidor de papas fritas    
+    - Tamaño 
+    - Estado
+    - Tipo de corte
+    - Precio
+    - Variedad de papa

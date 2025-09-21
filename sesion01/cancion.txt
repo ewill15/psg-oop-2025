@@ -1,0 +1,39 @@
+Una aplicación permite descubrir canciones nuevas.
+Las personas pueden escuchar fragmentos aleatoriamente,
+darle "like" para ver el nombre de la canción, artista y carátula
+o "dislike" para pasar a la siguiente.
+Compara las canciones con según género, duración y artista.
+
+Requisitos:
+
+- escuchar fragmentos aleatoriamente de canciones
+- dar "like" para ver el nombre de la canción, artista y carátula
+- dar "dislike" para pasar a la siguiente
+- comparar canciones según género, duración y artista
+
+Objetos:
+- Canción 🎼
+
+Características:
+- Canción:
+    - nombre
+    - artista
+    - carátula
+    - género
+    - duración
+    - fragmentos
+
+Acciones:
+- escuchar fragmentos
+- dar "like"
+- dar "dislike"
+- ver información
+- comparar canciones
+Diseño Orientado a Objetos (DOO)
+Oriented Object Design (OOD)
+Es la etapa en la que se convierte el análisis orientado a objetos en un diseño orientado a objetos
+
+El diseñador debe dar nombre a los objetos y define los comportamientos
+
+Crea los diagramas de clases y las relaciones entre los objetos
+
