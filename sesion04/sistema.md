@@ -10,12 +10,19 @@ Requisitos:
 - Tiene un nombre
 - Tiene un fondo de pantalla
 - Cualquiera puede cambiar el fondo de pantalla
+- Tiene un reloj
+- Existe un método ver hora 
+
 Objetos:
 - SistemaOperativo
+  
 Características:
 - SistemaOperativo:
     - nombre: String
     - fondo_pantalla: String
+    - reloj: String
+    - ver_hora()
+  
 Acciones:
 - SistemaOperativo:
     - cambiar_fondo_pantalla(imagen)
@@ -23,7 +30,9 @@ Acciones:
 classDiagram
     class SistemaOperativo {
         +nombre: String
+        +reloj: String
         +fondo_pantalla: String
         +cambiar_fondo_pantalla(imagen)
+        +ver_hora()
     }
 ```
