@@ -4,7 +4,7 @@ class SistemaOperativo:
         self.nombre = nombre 
         self.fondo_pantalla = fondo_pantalla 
         self._reloj = reloj
-        self._bateria = 1  # Protegido
+        self.__bateria = 1  # Privado
     def cambiar_fondo_pantalla(self, nuevo_fondo):
         self.fondo_pantalla = nuevo_fondo
         print(f"Nuevo fondo: {self.fondo_pantalla}")
@@ -13,13 +13,14 @@ class SistemaOperativo:
         print(f"La hora actual es: {self._reloj}")
         return self._reloj
     def estado_bateria(self):
-        print(f"Estado de la batería: {self._bateria}%")
-        return self._bateria
+        print(f"Estado de la batería: {self.__bateria}%")
+        return self.__bateria
     def cargador(self, cantidad):
         print("🔌 Cargador conectado.")
-        self._bateria += cantidad
-        print(f"Batería cargada a: {self._bateria}%")
+        self.__bateria += cantidad
+        print(f"Batería cargada a: {self.__bateria}%")
         print("🔌 Cargador desconectado.")
+
 # Implementando la clase
 so = SistemaOperativo("PyPhoneOS", "gatitos.jpg", "12:00 PM")
 print(f"Fondo de pantalla: {so.fondo_pantalla}")
@@ -30,6 +31,10 @@ so.ver_hora()
 so.estado_bateria()
 so.cargador(20)
 so.estado_bateria()
+try:
+    print(f"Batería: {so.__bateria}")  # Error
+except AttributeError as e:
+    print(f"Error: {e}")
 
 # # Definiendo la clase
 # class SistemaOperativo:

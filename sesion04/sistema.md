@@ -36,7 +36,7 @@ classDiagram
         +nombre: String
         #reloj: String
         +fondo_pantalla: String
-        #bateria: int
+        -bateria: int
         +cambiar_fondo_pantalla(imagen)
         +ver_hora()
         +estado_bateria()
