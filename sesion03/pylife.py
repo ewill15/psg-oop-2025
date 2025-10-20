@@ -1,32 +1,62 @@
 	# Definiendo la clase
-class Perro:
-    factor_edad = 7 # Atributo de clase
-    def __init__(self, nombre, edad): # Constructor
+class Gato:
+    def __init__(self, nombre, color): # Constructor
         self.nombre = nombre
-        self.edad = edad
+        self.color = color
+        self.edad = 0
  
-    def ladrar(self): # Método de instancia
-        print(f"{self.nombre} dice: ¡Guau!")
+    @classmethod # Método de clase
+    def nacer(cls, nombre, color):
+        print(f"{nombre} ha nacido como un cachorro")
+        return cls(nombre, color)
  
     def crecer(self, tiempo): # Método de instancia
         self.edad += tiempo
         print(f"{self.nombre} ha crecido {tiempo} años")
  
-    @classmethod # Nuevo Método de clase
-    def nacer(cls, nombre):
-        print(f"{nombre} ha nacido como un cachorro")
-        return cls(nombre,0)
+    def maullar(self): # Método de instancia
+        print(f"{self.nombre} dice: {Gato.sonidos()[0]}")
  
-    @classmethod # Nuevo Método de clase
-    def edad_a_humano(cls, perro):
-        print(f"En años humanos, {perro.nombre}")
-        print(f"tiene {perro.edad * cls.factor_edad} años")
-    
+    @staticmethod # Nuevo Método estático
+    def sonidos():
+        return ["miau", "ronroneo"]
+ 
 # Instanciando un objeto
-rex = Perro.nacer("Rex")
-rex.ladrar()
-rex.crecer(2)
-Perro.edad_a_humano(rex)
+mimi = Gato.nacer("Mimi", "blanco")
+mimi.maullar()
+mimi.crecer(2)
+sonidos = Gato.sonidos()
+print(f"Sonidos de {mimi.nombre}: {sonidos}")
+
+# Definiendo la clase
+# class Perro:
+#     factor_edad = 7 # Atributo de clase
+#     def __init__(self, nombre, edad): # Constructor
+#         self.nombre = nombre
+#         self.edad = edad
+ 
+#     def ladrar(self): # Método de instancia
+#         print(f"{self.nombre} dice: ¡Guau!")
+ 
+#     def crecer(self, tiempo): # Método de instancia
+#         self.edad += tiempo
+#         print(f"{self.nombre} ha crecido {tiempo} años")
+ 
+#     @classmethod # Nuevo Método de clase
+#     def nacer(cls, nombre):
+#         print(f"{nombre} ha nacido como un cachorro")
+#         return cls(nombre,0)
+ 
+#     @classmethod # Nuevo Método de clase
+#     def edad_a_humano(cls, perro):
+#         print(f"En años humanos, {perro.nombre}")
+#         print(f"tiene {perro.edad * cls.factor_edad} años")
+    
+# # Instanciando un objeto
+# rex = Perro.nacer("Rex")
+# rex.ladrar()
+# rex.crecer(2)
+# Perro.edad_a_humano(rex)
 
 
 

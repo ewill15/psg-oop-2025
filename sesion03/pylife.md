@@ -1,5 +1,40 @@
 # Análisis
 Requisitos:
+- Crear un gato
+- Los gatos tienen un nombre y color
+- Los gatos pueden maullar
+- Los gatos nacen como cachorros
+- Los gatos pueden hacer `miau` y `ronroneo`
+- Los gatos pueden crecer con el tiempo
+Objetos:
+- Gato
+Características:
+- Gato: nombre, color, edad
+Acciones:
+- Gato: nacer, crecer, maullar, sonidos
+<br>
+<br>
+
+```mermaid
+classDiagram
+    class Gato {
+        String nombre
+        String color
+        int edad
+        nacer(nombre, color)
+        crecer(tiempo)
+        maullar()
+        sonidos()
+    }
+```
+<br>
+<br>
+
+***
+Análisis para Perro  
+***
+# Análisis
+Requisitos:
 - Crear un perro
 - Los perros tienen un nombre
 - Los perros pueden ladrar
@@ -22,13 +57,12 @@ classDiagram
         edad_a_humano(perro)
     }
 ```
+  
+<br><br>
 
-
-
-
-
-
-
+***
+Análisis para Personas
+***
 # Análisis
 
 Requisitos:
