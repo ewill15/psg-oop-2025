@@ -3,7 +3,8 @@ class SistemaOperativo:
     def __init__(self, nombre, fondo_pantalla, reloj):
         self.nombre = nombre 
         self.fondo_pantalla = fondo_pantalla 
-        self._reloj = reloj 
+        self._reloj = reloj
+        self._bateria = 1  # Protegido
     def cambiar_fondo_pantalla(self, nuevo_fondo):
         self.fondo_pantalla = nuevo_fondo
         print(f"Nuevo fondo: {self.fondo_pantalla}")
@@ -11,6 +12,14 @@ class SistemaOperativo:
     def ver_hora(self):
         print(f"La hora actual es: {self._reloj}")
         return self._reloj
+    def estado_bateria(self):
+        print(f"Estado de la batería: {self._bateria}%")
+        return self._bateria
+    def cargador(self, cantidad):
+        print("🔌 Cargador conectado.")
+        self._bateria += cantidad
+        print(f"Batería cargada a: {self._bateria}%")
+        print("🔌 Cargador desconectado.")
 # Implementando la clase
 so = SistemaOperativo("PyPhoneOS", "gatitos.jpg", "12:00 PM")
 print(f"Fondo de pantalla: {so.fondo_pantalla}")
@@ -18,4 +27,28 @@ so.cambiar_fondo_pantalla("perritos.jpg")
 so.fondo_pantalla = "paisajes.jpg"
 print(f"Fondo de pantalla: {so.fondo_pantalla}")
 so.ver_hora()
-print(f"Reloj: {so._reloj}")  # Posible, pero no recomendado
+so.estado_bateria()
+so.cargador(20)
+so.estado_bateria()
+
+# # Definiendo la clase
+# class SistemaOperativo:
+#     def __init__(self, nombre, fondo_pantalla, reloj):
+#         self.nombre = nombre 
+#         self.fondo_pantalla = fondo_pantalla 
+#         self._reloj = reloj 
+#     def cambiar_fondo_pantalla(self, nuevo_fondo):
+#         self.fondo_pantalla = nuevo_fondo
+#         print(f"Nuevo fondo: {self.fondo_pantalla}")
+#         return self.fondo_pantalla
+#     def ver_hora(self):
+#         print(f"La hora actual es: {self._reloj}")
+#         return self._reloj
+# # Implementando la clase
+# so = SistemaOperativo("PyPhoneOS", "gatitos.jpg", "12:00 PM")
+# print(f"Fondo de pantalla: {so.fondo_pantalla}")
+# so.cambiar_fondo_pantalla("perritos.jpg")
+# so.fondo_pantalla = "paisajes.jpg"
+# print(f"Fondo de pantalla: {so.fondo_pantalla}")
+# so.ver_hora()
+# print(f"Reloj: {so._reloj}")  # Posible, pero no recomendado
