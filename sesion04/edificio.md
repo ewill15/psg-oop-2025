@@ -1,4 +1,4 @@
-	# Análisis
+# Análisis
 Requisitos:
 - Un edificio necesita un sistema de control de acceso
 - Existe un pin de desbloqueo privado

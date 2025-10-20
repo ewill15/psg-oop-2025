@@ -3,6 +3,8 @@ Se tiene que almacenar el pin,
 sólo el sistema podrá cambiar el pin de desbloqueo,
 y no se puede ver sólo se puede cambiar por
 defecto el pin será 0000
+<br>
+<br>
 # Análisis
 Requisitos:
 - Tiene un nombre

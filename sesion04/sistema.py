@@ -1,4 +1,4 @@
-# Definiendo la clase
+# Definiendo la clase 
 class SistemaOperativo:
     def __init__(self, nombre, fondo_pantalla, reloj):
         self.nombre = nombre 
