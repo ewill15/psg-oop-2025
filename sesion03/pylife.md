@@ -1,4 +1,35 @@
 # Análisis
+Requisitos:
+- Crear un perro
+- Los perros tienen un nombre
+- Los perros pueden ladrar
+- Los perros nacen como cachorros
+- La edad de un perro es 7 veces menor que la de un humano
+Objetos:
+- Perro
+Características:
+- Perro: nombre, edad
+Acciones:
+- Perro: ladrar, nacer, crecer, edad_a_humano
+```mermaid
+classDiagram
+    class Perro {
+        String nombre
+        int edad
+        ladrar()
+        nacer(nombre)
+        crecer(tiempo)
+        edad_a_humano(perro)
+    }
+```
+
+
+
+
+
+
+
+# Análisis
 
 Requisitos:
 - Crear personas
