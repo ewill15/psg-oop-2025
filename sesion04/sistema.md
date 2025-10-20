@@ -12,7 +12,7 @@ Requisitos:
 - Cualquiera puede cambiar el fondo de pantalla
 - Tiene un reloj
 - Existe un método ver hora 
-
+  
 Objetos:
 - SistemaOperativo
   
@@ -21,16 +21,16 @@ Características:
     - nombre: String
     - fondo_pantalla: String
     - reloj: String
-    - ver_hora()
-  
+
 Acciones:
 - SistemaOperativo:
     - cambiar_fondo_pantalla(imagen)
-  - ```mermaid
+    - ver_hora()
+```mermaid
 classDiagram
     class SistemaOperativo {
         +nombre: String
-        +reloj: String
+        #reloj: String
         +fondo_pantalla: String
         +cambiar_fondo_pantalla(imagen)
         +ver_hora()
