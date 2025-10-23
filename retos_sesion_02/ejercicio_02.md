@@ -8,3 +8,45 @@ La vinoteca tiene en su inventario 4 vinos y 3 quesos
 - Realiza el análisis y diseño de las clases Vino y Queso
 - Escribe el codigo en Python para crear la clases Vino y Queso
 - Instancia los 4 vinos y 3 quesos con sus respectivos atributos
+  
+  
+#Analisis
+
+Requisitos:
+- registar vinos y quesos
+- registrar atributos de cada vino
+- registrar atributos de cada queso
+   
+Objetos:
+- Vinoteca
+
+Características:
+- Vino:
+    - nombre
+    - tipo
+    - cepa
+    - anio_produccion
+- Queso
+    - nombre
+    - variedad
+    - edad
+    - lleva_sal
+
+Acciones:
+- (No hay acciones)
+
+```mermaid
+classDiagram
+    class Vino {
+        String nombre
+        String tipo
+        String cepa
+        String anio_produccion        
+    }
+    class Queso {
+        String nombre
+        String variedad
+        String edad
+        Boolean lleva_sal        
+    }
+```
